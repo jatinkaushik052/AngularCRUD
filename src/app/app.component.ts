@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SideNavbarComponent } from "./component/side-navbar/side-navbar.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [SideNavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

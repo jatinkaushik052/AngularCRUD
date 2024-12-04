@@ -1,0 +1,8 @@
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+    .accordion-body a{
+        text-decoration: none;
+        color: black;
+    }
+}

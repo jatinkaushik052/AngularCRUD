@@ -1,0 +1,26 @@
+<div class="container d-flex justify-content-center mt-5  addUser row">
+    <div class="col-6">
+        <form action="" [formGroup]="addUserForm" class="row">
+            <div class="col-6 d-flex flex-column">
+                <label for="">User Name</label>
+                <input formControlName="username" type="text" name="" id="" placeholder="Enter your name">
+            </div>
+
+            <div class="col-6 d-flex flex-column">
+                <label for="">Email</label>
+                <input formControlName="email" type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="col-12 d-flex flex-column">
+                <label for="">Department</label>
+                <input formControlName="department" type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="col-4 mt-3">
+                <button type="button" class="btn btn-primary" *ngIf="currentId == 0" (click)="onAdd()">Add</button>
+                <button type="button" type="button" class="btn btn-warning" *ngIf="currentId !== 0"  (click)="onUpdate()">Update</button>
+
+            </div>
+        </form>
+    </div>
+   
+    
+</div>
